@@ -1,0 +1,51 @@
+RESTful APIs (Representational State Transfer)
+
+NOT A PROTOCOL
+Uniform Interface
+Client-Server
+Stateless
+
+--------------------------------------------
+
+- SOAP protocol vs REST architecture
+    - REST is not a protocol, SOAP is.
+    - Specifications at various layers
+    - More overhead, but more comprehensive
+    - Requires XML (verbose XML doc)
+    - SOAP envelope
+        Header
+        Body
+
+--------------------------------------------
+
+HTTP Request methods (verbs)
+
+- GET - Get information
+- HEAD - 
+- POST - Send info or change record
+- PUT - Update info
+- DELETE - Remove info
+- CONNECT - 
+- OPTIONS - 
+- TRACE - 
+
+Endpoint will expect certain verb for action
+
+--------------------------------------------
+
+Use postman to get jokes from the site:
+
+https://api.icndb.com
+
+Reference: http://www.icndb.com/api/
+
+--------------------------------------------
+
+HTTP Query String
+- Part of URL
+ ?name=Chris&age=29
+- Link can be used again, shared
+
+HTTP Payload
+- At the bottom of request/response after blank line
+- Data is here.

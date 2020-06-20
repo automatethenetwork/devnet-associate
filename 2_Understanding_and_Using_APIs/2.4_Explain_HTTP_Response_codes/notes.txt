@@ -1,10 +1,15 @@
 Response Codes
 
-1XX Informational Responses
-2XX Successful Responses
-3XX Redirects
-4XX Client Erroes
-    401 - Unauthorized
-    403 - Forbidden
-    404 - Not Found
-5XX Server Errors
+- 1XX Informational Responses
+- 2XX Successful Responses
+- 3XX Redirects
+- 4XX Client Erroes
+    - 400 - Bad request
+    - 401 - Unauthorized
+        User not signed in
+    - 403 - Forbidden
+        User not allowed to do action
+    - 404 - Not Found
+    - 405 - Method not allowed
+        Wrong verb in request
+-5XX Server Errors

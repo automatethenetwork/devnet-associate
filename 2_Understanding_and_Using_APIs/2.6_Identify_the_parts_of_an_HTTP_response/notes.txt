@@ -1,5 +1,9 @@
-HTTP RESPONSE:
-
+HTTP Request - Use Postman to see raw responses.
+    - Reuqest / Response
+    - Start Line - Verb and Protocol
+    - Headers (Key:Value Pair) - optional - Infomration about the request itself
+    - Blank Line
+    - Body - optional
 
 GET /jokes/random?firstName=John&amp;lastName=Doe HTTP/1.1
 
