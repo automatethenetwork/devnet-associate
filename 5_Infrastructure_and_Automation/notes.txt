@@ -1,0 +1,91 @@
+Why network automation?
+
+-Faster
+    Device deployment
+    Collecting and monitoring info
+    Troubleshooting
+-Standardized configs
+    Multiple network engineers may manually do things differently
+-Granular monitoring
+    Collect specific targeted data, quickly.
+    Spot problems right away
+    Push alerts or changes in other systems
+-Known outcomes
+    Removes human errors
+
+
+What can you automate?    
+
+-Monitoring
+    SNMP is not as granular
+    Get just the data you need
+-Provisioning
+    Update Os, assign IPs, etc.
+        Template
+-Migrations
+-Config management
+    Desired states
+-Troubleshooting
+    Monitor for events and apply remediation automatically
+
+
+The Evolution of Network APIs
+
+-SNMP used in the past
+    Collect data from device
+    Device had agent
+    Data transmitted to NMS
+    Hard to make reactive scripts
+-CLI
+    Telnet/SSH/Console
+-NETCONF
+    Came about in 2006
+    Set out to replace SNMP
+    Sends structured data back and forth using XML
+    Transport sits on top of SSH, can use port 22, uses TCP
+    Uses RPC
+        get-config
+-RESTCONF
+    NETCONF + RESTFUL
+    Send HTTP requests
+    JSON format can be used
+
+
+Network Programmability vs. Network Automation
+
+-Programmability
+    Writing scripts
+
+-Automation tools
+    Desired state of network, ie app accessible from internet
+        Intent based networking
+        Self healing operations
+    Ansible
+        Automation and orchestration tools
+            Automation == what we want to happen
+            Orchestration == when we want to happen, what order
+        Written in python
+        Free, open source, cross platform
+        Agentless, nothing installed on device
+        Modules
+            Prebuilt functionality able to run against devices
+            Thousands included
+
+
+Devices and Controllers in the Era of Send
+
+-Control Plane
+        Decisions on where to send data
+        Each device
+-Data Plane
+        Data sent to one devices
+        Each device
+-SDN
+    Control plane moved out
+    One control plane
+-Cisco SDN
+    Datacenter - ACI
+        APIC-DC
+        APIC-EM
+    DNA
+        Sits on top of APICs and provides API
