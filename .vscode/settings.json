@@ -6,8 +6,14 @@
         "apics",
         "apikey",
         "datacenter",
+        "devnet",
+        "devnetsandbox",
+        "ncclient",
         "netconf",
+        "pprint",
         "restconf",
-        "snmp"
+        "snmp",
+        "virl",
+        "xmltodict"
     ]
 }

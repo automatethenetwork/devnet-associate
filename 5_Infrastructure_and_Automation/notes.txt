@@ -89,3 +89,32 @@ Devices and Controllers in the Era of Send
         APIC-EM
     DNA
         Sits on top of APICs and provides API
+
+
+Setting Up Your Devnet Study Environment
+
+-Python 2 & 3
+-Git CLI
+-VSCode
+-PIP
+    ncclient
+    requests
+    pprint
+    xmltodict
+
+-Sandbox
+    devnetsandbox.cisco.com
+    Some always on, some reserved
+-VIRL
+    Emulator for cisco hardware
+    Ran on hypervisor
+
+
+Code Exchange
+
+-Devnet Code Exchange
+    Programmability
+    https://developer.cisco.com/codeexchange
+-Cisco Automation Exchange
+    Centered around Ansible etc.
+    https://developer.cisco.com/network-automation
