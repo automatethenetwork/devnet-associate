@@ -6,7 +6,7 @@ from router_info import router
 # import logging
 # logging.basicConfig(level=logging.DEBUG)
 
-netconf_filter = open("C:/dev/Python/Demos/IOS-XE/netconf-filter.xml").read()
+netconf_filter = open("D:/Google Drive/Repositories/CodeSamples/Python/Networking/IOS-XE/netconf-filter.xml").read()
 
 with manager.connect(host=router["host"], port=router["port"], username=router["username"], password=router["password"], hostkey_verify=False) as m:
     for capability in m.server_capabilities:
@@ -35,4 +35,4 @@ op_state = interface_python["interfaces-state"]["interface"]
 print("Start")
 print(f"Name: {config['name']['#text']}")
 print(f"Description: {config['description']}")
-print(f"Pakcets In {op_state['statistics']['in-unicast-pkts']}")
+print(f"Packets In {op_state['statistics']['in-unicast-pkts']}")

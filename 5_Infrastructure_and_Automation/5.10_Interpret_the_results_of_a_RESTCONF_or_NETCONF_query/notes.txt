@@ -1,0 +1,57 @@
+NETCONF
+    -RFC 4741 (2006)
+    -Port 830 (default)
+    -Uses SSH
+    -Uses TCP
+    -USes XML
+
+    -Get operation status
+    -Get configuration state of device
+    -Edit configuration of device
+
+    -YANG specifies exact data and format being sent back and forth
+
+    Protocol Stack
+        SSH
+        RPC, expect RPC Reply
+            Message ID
+        Command
+            Get
+            Get-config
+            Edit-config
+        Data
+
+    Data stores
+        Can specify Running, Startup, Candidate configs
+
+Enable NETCONF on IOS-XE
+
+#Enable
+#config t
+#hostname R1
+#domain name abc.com
+#username cisco priv 15 password cisco
+#crypto key gen rsa
+#ip ssh ver 2
+#line vty 0 4
+#login local
+#transport input shh
+
+Add IPs to interface
+
+#netconf ssh
+#netconf-yang
+
+Develop RESTCONF Scripts for Cisco IOS-XE
+
+RESTCONF (2017)
+    Leverages HTTP
+        GET
+        POST
+        PUT
+        PATCH
+        DELETE
+
+https://{{host}}:{{port}}/restconf/data/Cisco-IOS-XE-interfaces-oper:interfaces
+
+host + port + restconf + datastore + module +
