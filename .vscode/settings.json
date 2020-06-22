@@ -10,11 +10,9 @@
         "devnetsandbox",
         "ncclient",
         "netconf",
-        "pkts",
         "pprint",
         "restconf",
         "snmp",
-        "toprettyxml",
         "virl",
         "xmltodict"
     ]
