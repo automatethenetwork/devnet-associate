@@ -22,6 +22,46 @@ Organizations > Networks > Devices
 
 
 # ACI (Management for datacenters)
+    - Application aware
+    - We tell datacenter how to behave w/ application policies, no code needed
+    - Nexus 9000 Fabric - Spine Leaf Architecture
+        Every connections is layer 3
+        IGP (EIGRP or OSPF or IS-IS)
+        VXLAN on top of that
+            Layer 2 connectivity across Layer 3 connections
+    -APIC Controller, brain and automation for Devices
+        At least 3 deployed
+        Not part of Data or Control plan
+    -Universe (root)
+        Tenant Common
+            Tenant A
+                Networking
+                    VRFs - Routing / Layer 3
+                    Bridge Domains - Layer 2 VLANs
+                    Subnets - 
+                    External Networks - Connections to networks outside of aCI
+                Policy
+                    Application (network profiles)
+                    EPGs (endpoint groups)
+                        Groups of servers as assigned
+                    Contracts
+                        Enable connectivity between EPGs
+                        Needs to be whitelisted first
+                    Filters
+    -Object model
+        Relative Names and Distinguished names like NX-OS API
+        Can use Visore to explore API
+    -REST API
+        https://ip/api/class (or mo)/name.json(or xml)
+
+    -ACI-SDK
+        ACI-COBRA
+        ACI-MODEL
+    -ACIToolkit
+    -API Inspector for ACI
+        Built in to web GUI
+    
+
 
 ## Nexus
 
@@ -45,37 +85,11 @@ Organizations > Networks > Devices
 - VXLAN on IS-IS : Layer 2 information carried in the Layer3 packet from one device to another.
 - APIC controllers are servers which are brains of the model
 
-- Universal
-    - Tenant Common
-        - Networking (Actual physical network conf)
-            - VRFs
-            - Bridge Domains
-            - Subnets
-            - External Networks
-        - Policy
-            - Application Profiles
-            - EPGs (End Point Groups):
-                Represents same kind of servers
-            - Contracts
-                Enable connectivity between Devices
-            - Filters
-    - Tenant A
-        - Networking (Actual physical network conf)
-            - VRFs
-            - Bridge Domains
-            - Subnets
-            - External Networks
-        - Policy
-            - Application Profiles
-            - EPGs (End Point Groups):
-                Represents same kind of servers
-            - Contracts
-                Enable connectivity between Devices
-            - Filters
 
 Sandbox: https://devnetsandbox.cisco.com/RM/Diagram/Index/5a229a7c-95d5-4cfd-a651-5ee9bc1b30e2?diagramType=Topology
 
 - REST API, COBRA SDK, APIC TOOLKIT
+- https://acitoolkit.readthedocs.io
 
 
 # CISCO DNA CENTER (Management for enterprise)

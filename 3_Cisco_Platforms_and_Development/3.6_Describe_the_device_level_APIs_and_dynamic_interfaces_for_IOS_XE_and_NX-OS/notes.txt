@@ -3,6 +3,7 @@
 Sandbox: https://devnetsandbox.cisco.com/RM/Diagram/Index/dae38dd8-e8ee-4d7c-a21c-6036bed7a804?diagramType=Topology
 
 - For datacenters
+- ACI (SDN Controller for Nexus)
 - Runs Linux -> NX-OS
 - NX-API custom API no NETCONF, RESTCONF
     - NX-API CLI (OLD)
@@ -10,14 +11,24 @@ Sandbox: https://devnetsandbox.cisco.com/RM/Diagram/Index/dae38dd8-e8ee-4d7c-a21
         - Not RESTFul API
         - Only POST
         - Enabling NX-API:
-            - "feature nxapi"
+            - #feature nxapi
+            - #nxapi sandbox - enables webserver that helps develop script
+                    XML and JSON are for INS API
+        - https://{{host}}/ins
+        - Always POST method
+        - JSON-RPC or INS API which uses JSON (INS API is newer)
     - NX-API REST (NEW)
         - Object Model : Management Information tree
         - root layer : sys
+        - Relative name and Distinguished name
+            Relative names can duplicate
         - visore: doc for NX-API REST
-
+        - http://ip/api/QueryType(or MO for managedObject)/identifier/queryString
+        - https://{{host}}/api/node/mo/sys/intf/phys-[eth1/1].json
+        
 ## IOS-XE (Covered in 3.8)
 
 YANG
 NETCONF
 RESTCONF
+

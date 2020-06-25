@@ -54,4 +54,26 @@ RESTCONF (2017)
 
 https://{{host}}:{{port}}/restconf/data/Cisco-IOS-XE-interfaces-oper:interfaces
 
-host + port + restconf + datastore + module +
+host + port +  root(restconf) + datastore(data) + model(cisco-IOS) + container(interfaces) + leaf
+
+Enable RESTCONF on IOS-XE
+
+#restconf
+#ip http server
+ip http authentication local
+ip http secure-server
+
+
+Explore Device API w/ Postman
+
+https://{{host}}:{{port}}/restconf/data/netconf-state/capabilities
+
+https://{{host}}:{{port}}/restconf/data/Cisco-IOS-XE-interfaces-oper:interfaces/interface=GigabitEthernet1
+https://{{host}}:{{port}}/restconf/data/Cisco-IOS-XE-interfaces-oper:interfaces/interface=GigabitEthernet1/name
+
+
+Developing RESTCONF in Python with Requests
+
+
+
+
