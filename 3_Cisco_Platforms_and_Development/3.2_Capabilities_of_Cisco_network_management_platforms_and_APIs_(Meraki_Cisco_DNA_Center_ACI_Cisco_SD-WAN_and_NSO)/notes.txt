@@ -88,23 +88,25 @@ Organizations > Networks > Devices
 
 Sandbox: https://devnetsandbox.cisco.com/RM/Diagram/Index/5a229a7c-95d5-4cfd-a651-5ee9bc1b30e2?diagramType=Topology
 
-- REST API, COBRA SDK, APIC TOOLKIT
+- REST API, COBRA SDK, ACI TOOLKIT
 - https://acitoolkit.readthedocs.io
+- Toolkit has sdk to make python scripting easier
+- Setup and push changes to ACI
 
 
 # CISCO DNA CENTER (Management for enterprise)
 
 Reference: https://www.youtube.com/watch?v=hzsmoY2xdjQ
-
-
+-Intent based infrastructure
+    Build policy and let network handle details
 - Catalyst 9000 series
 - Automating campuses
 - 5 Applications:
-    - Design
-    - Policy
-    - Provision
-    - Assurance
-    - Platform
+    - Design - Geographic setup
+    - Policy - Set policy, define the intent
+    - Provision - Discovering new assets and provisioning
+    - Assurance - In depth monitoring
+    - Platform - Automations and integrations (API)
 
 Northbound - Intent API
 Southbound - Mutivendor SDK (infrastructure)
