@@ -108,13 +108,16 @@ Reference: https://www.youtube.com/watch?v=hzsmoY2xdjQ
     - Assurance - In depth monitoring
     - Platform - Automations and integrations (API)
 
-Northbound - Intent API
-Southbound - Mutivendor SDK (infrastructure)
-Eastbound - Cisco devices (Meraki, Stealthwatch)
-Westbound - 3rd party solutions
+Northbound - Intent API, configuration coming from us for DNAC
+Southbound - Mutivendor SDK (infrastructure), configuration going from DNAC to infrastructure, DNAC can work with third parties via the SDKs
+Eastbound - Cisco devices (Meraki, Stealthwatch), integrations to other platforms/controllers.
+Westbound - 3rd party solutions, integrations with other platforms (non-cisco or non networking) IPAM, Tableu, PowerBI, for dashboards etc.
 
 Sandbox: https://devnetsandbox.cisco.com/RM/Diagram/Index/c3c949dc-30af-498b-9d77-4f1c07d835f9?diagramType=Topology
 
+Authenticate first and get token
+
+pip install dnacentersdk
 # CISCO SD-WAN
 
 Reference: https://www.cisco.com/c/en_in/solutions/enterprise-networks/sd-wan/demos/walk-through.html#~stickynav=1
