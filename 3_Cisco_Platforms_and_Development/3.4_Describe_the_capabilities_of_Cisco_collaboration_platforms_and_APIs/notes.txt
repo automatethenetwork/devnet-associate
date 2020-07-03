@@ -10,7 +10,7 @@
 
 #Cisco Unified Communication Manager including AXL and UDS interfaces, and Finesse
 
-- Cisco Unified Communication Manager: VOIP Operations within Cisco Colaboration
+- Cisco Unified Communication Manager: VOIP Operations within Cisco Collaboration
 - UDS (User Data Service)
     - REST API 
         - XML
@@ -25,3 +25,8 @@
         - XML
     - Tracking calls
 
+SOAP APIs
+- Http
+- Headers = basic auth
+- Methods in tags
+- What methods to use? Documentation

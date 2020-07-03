@@ -5,11 +5,7 @@ import calendar
 
 dna = api.DNACenterAPI(base_url='https://sandboxdnac2.cisco.com',
                        username='devnetuser', password='Cisco123!')
-
-
 ##### NETWORKS AND SITES ####
-
-# Print Site Topology
 sites = dna.networks.get_site_topology()
 for site in sites.response.sites:
     if site.parentId == 'a7cbac22-d82e-42ed-a705-b51829e955fa':
@@ -30,8 +26,6 @@ for vlan in vlans.response:
 # Physical Topology Details
 phys_top = dna.networks.get_physical_topology()
 print(json.dumps(phys_top, indent=2, sort_keys=True))
-
-
 ############### DEVICES #############
 # Print Device Details
 devices = dna.devices.get_device_list()
@@ -45,8 +39,6 @@ for device in devices.response:
 # Get a specific device
 device = dna.devices.get_device_by_id('10cdbf6d-3672-4b4d-ae75-5b661fa0a5bc')
 print(device)
-
-
 ######## HEALTH CHECKS ################
 ############# CLIENTS ##############
 # Get Client Health with Epoch Datetime
@@ -58,8 +50,7 @@ client_health = dna.clients.get_overall_client_health(
 print(json.dumps(client_health, indent=2, sort_keys=True))
 print(' ')
 # # GET NETWORK HEALTH
-# net_health = dna.networks.get_overall_network_health(timestamp=str(epoch_datetime)
-#                                                      )
+# net_health = dna.networks.get_overall_network_health(timestamp=str(epoch_datetime))
 # print(net_health)
 # print(' ')
 # # GET SITE HEALTH
