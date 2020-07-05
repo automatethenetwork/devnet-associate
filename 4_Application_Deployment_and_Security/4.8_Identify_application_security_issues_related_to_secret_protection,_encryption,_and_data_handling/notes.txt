@@ -1,0 +1,36 @@
+Securing Data
+
+-Data in transit vs at rest.
+    Transit - When data is sent to 3rd parties it has to be protected/encrypted
+    Rest - Files encrypted, DB encryption, RAM purged, App, environment variables
+-PII - Personal Identifying Information
+-PHI - PErsonal Health Information - HIPAA
+-Student - FERPA
+
+-Transit
+    Telnet - clear text
+    SSH (and HTTPS) - encrypted
+
+-Environment variables  
+    #echo $HOME
+
+    #export SWITCHUSER='cisco'
+    #echo $SWITCHUSER
+
+    import os
+    user = os.environ.get('SWITCHUSER')
+
+    from dotenv import load_dotenv
+    .env file
+    CISCOUSER='cisco'
+
+
+-At Rest
+    Disk encryption
+    DB encryption
+    Azure
+        AlwaysEncrypted
+        
+
+
+

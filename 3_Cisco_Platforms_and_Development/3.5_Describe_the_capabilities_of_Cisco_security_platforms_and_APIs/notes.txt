@@ -1,0 +1,11 @@
+Cisco Firepower Management Center
+
+FMC REST API
+username + password
+token in headers
+
+FMC manages Firepower Devices (ASAs with FP) and Firepower Threat Defense Devices (pure FP devices)
+
+
+
+

@@ -1,0 +1,6 @@
+Continuous Integration / Continuous Deployment
+
+-Central repository
+-Automate system testing
+    Environment cloning
+        Resolve drifts

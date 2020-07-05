@@ -1,0 +1,25 @@
+Firewalls
+-At its most basic level, a firewall accepts or rejects packets based on the IP addresses and ports to which they're addressed.
+-Firewalls don’t just keep traffic from coming in, they can also keep traffic from getting out.
+
+Load Balancers
+-Takes requests and “balances” them by spreading them out among multiple server
+    -Persistent sessions: If an application requires a persistent session — for example, a user needs to be logged in — the load balancer will send requests to the server handling that session.
+    -Round robin: With round robin load balancing, the server simply sends each request to the “next” server on the list.
+    -Least connections: Often it makes sense to send requests to the server that’s least “busy”.
+    -IP Hash: With this algorithm, the load balancer makes a decision based on a hash (an encoded value based on the IP address of the request). 
+    You can think of this a something similar to when you attend an event and lines are formed for different stations based on the first letter in your last name.
+    -More complicated methods for deployment purposes
+        Blue-green deployment
+            -A load balancer sends traffic to the blue environment when it's ready, and if issues arise, the load balancer can send traffic back to the green environment 
+             and changes can be rolled back.
+        Canary deployment
+           -This deployment starts by diverting a small fraction of your traffic to the blue environment. A load balancer can then increase the amount of traffic diverted 
+            to the blue environment until either issues are detected and traffic goes back to the old environment or all servers and users are on the new environment
+DNS
+    -how servers on the internet translate human-readable names such as developer.cisco.com or www.example.com into the machine-routable IP addresses such as 74.125.157.99 (for Google) 
+     or 208.80.152.201 (for Wikipedia) that are necessary to actually navigate the internet.
+
+Reverse Proxy
+    -A reverse proxy works to make sure responses look like they all come from the same server.
+    -A reverse proxy can evaluate traffic and act accordingly. In this way, it’s similar to — and can be used as — a firewall or a load balancer.

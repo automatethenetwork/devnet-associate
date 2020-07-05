@@ -1,0 +1,24 @@
+Unit Testing
+
+Test Driven Development
+CI\CD Pipeline
+
+
+Testing is critical
+First testing is unit testing
+Done earliest in process
+
+Unit Testing
+Integration Testing
+System Testing
+Acceptance Testing/UAT
+
+
+Unit Testing
+    Granular
+    Modular
+    Whenever possible - Automated
+
+    Unit - Piece of code/automation being tested.
+    Test case - The code performing the testing
+    Test runner - The script/execution engine for automating test cases

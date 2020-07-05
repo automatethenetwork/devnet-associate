@@ -1,0 +1,19 @@
+What is OWASP?
+Open Web Application Security Project - Identifying threats
+
+Injection
+    Form allowing user to type in and submit data
+    Instead of typing in name attacker types in code
+XSS - Cross Site Scripting
+    -Malicious code is put into comments section or other. Downloaded by another user when browsing the page. 
+     Code can send users token to be used by attacker.
+SQL Injections
+    -Most commonly used attack
+    -Similar to XSS example, SQL code used in form to affect backend
+    -Data needs to be sanitized to avoid this attack
+CSRF - Cross Site Request Forgery
+    -Attackers code makes request on your behalf
+    -Bank transfer or purchase
+
+
+Two methods for encrypting data

@@ -1,0 +1,27 @@
+DevOps
+
+Merging of operations/development teams so they are not siloed
+
+Iterative and Incremental
+    Adopting Agile project management
+        Define
+        Build
+        Test
+        Release
+    More reliable and consistent
+    Source code control
+        Frequent update code base
+        Frequent tests
+    Quicker to market
+    Easier Integration
+    Faster time to deployment
+    Human-centric
+Continuous and Automated
+    Continuous makes deployment routine
+        Forces us to get use to this and ease risk
+    Automating deployments avoids human error
+End-to-end Responsibility
+    Organizational and functional visibility
+    Feedback and instrumentation
+    Cross-functional training and skills development
+    User centered planning and development
