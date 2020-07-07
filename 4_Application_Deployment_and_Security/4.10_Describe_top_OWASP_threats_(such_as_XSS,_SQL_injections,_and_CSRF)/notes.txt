@@ -1,19 +1,90 @@
 What is OWASP?
-Open Web Application Security Project - Identifying threats
+-Open Web Application Security Project - Identifying threats
+-Focused on providing education, tools, and other resources to 
+ help developers avoid some of the most common security problems in web-based applications.
 
 Injection
     Form allowing user to type in and submit data
     Instead of typing in name attacker types in code
+    
 XSS - Cross Site Scripting
     -Malicious code is put into comments section or other. Downloaded by another user when browsing the page. 
      Code can send users token to be used by attacker.
+     -Never display content inside
+        Inside script tags
+        Inside comments
+        As part of attribute names
+        As part of tag names
+        In CSS (within style tags)
+    -Only in (if sanitized)
+        As the content of an HTML tag
+        As the value of an attribute
+        As a variable within your Javascript
+
 SQL Injections
+    -The placement of malicious code in SQL statements, via web page input.
     -Most commonly used attack
     -Similar to XSS example, SQL code used in form to affect backend
     -Data needs to be sanitized to avoid this attack
+    -SQL Injection based on batched SQL statements
+        SELECT * FROM UserProfiles; DROP TABLE UserImages
+    -Detect and prevent SQL Injections
+        -Detection engines such as SQLmap or SQLninja .
+        -Source code analysis tools, also referred to as Static Application Security Testing (SAST) Tools
+         are designed to analyze source code and/or compiled versions of code to help find security flaws.]
+            -Detect buffer overflows, SQL Injection flaws, and so forth.
+        -Database Firewalls
+            -Database firewalls detect SQL injections based on the number of invalid queries from host, 
+             while there are OR and UNION blocks inside of request, or others.
+        -Prepared statements
+        -Stored procedures
+        -Whitelist Input Validation
+        -Escaping all user-supplied input
+            OWASP Enterprise Security API or ESAPI
+    -Additional defenses
+        -Least privilege
+        -Multiple database users
+        -SQL views
+
 CSRF - Cross Site Request Forgery
     -Attackers code makes request on your behalf
     -Bank transfer or purchase
-
+    -Can target different site user is logged into
 
 Two methods for encrypting data
+    -Two-way encryption
+        -You encrypt the data using a key, and then you can use that key 
+         (or a variation on it) to decrypt the data to get it back in “clear text.”
+    -One way encryption
+        -You can easily create an encrypted value without necessarily using a specific key, but you can’t unencrypt it.
+        -Good for passwords where you only compare encrypted version
+Where do you store the key safely?
+    -Specialized hardware (good but difficult and expensive)
+    -Key management service such as Amazon Key Management Service (uses specialty hardware but is easier and less expensive)
+    -Storing it in the database itself (which is not best practice, has no specialty hardware or physical characteristics, and is vulnerable to attack).
+
+Software Vulnerabilities
+    -Two different types: your own, and everyone else’s.
+    -Software developers are not security experts.
+    -Code scanning tools, such as Bandit , Brakeman , and VisualCodeGrepper , that will scan your code looking for well-known issues.
+    -Even software that has been in use for decades may have issues.
+    -Storing too much data.
+        If you only need a credit card authorization code for recurring billing, there is no reason to store the entire credit card number.
+    -Storing data in cloud
+        -While in many cases a cloud vendor’s security may be better than that of most enterprises
+            -Servers are completely outside of your control.
+            -You don’t know what employees are accessing them
+            -What happens to hard drives that are decommissioned.
+    -Roaming devices
+        -World’s workforce is much more mobile now than it was
+        -Laptops can carry lots of data
+        -Encrypt data whenever possible
+    -Best practices for transporting data
+        -Packets pass through multiple servers that may or may not belong to you on their way to their final destination.
+        -SSH: When connecting to your servers, provides authentication and encryption of messages between the source and target machines, 
+         making it difficult or impossible to snoop on your actions.
+        -TLS: These days, the vast majority of requests to and from the browser use the https:// protocol (rather than http:// )
+         TLS provides message authentication and stronger ciphers than its predecessor. Whenever possible you should be using TLS.
+        -VPN: Makes it possible to keep all application-related traffic inside your network, even when working with remote employees
+         Acts as a proxy and encrypts all traffic to and from the user.
+        

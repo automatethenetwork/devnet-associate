@@ -1,0 +1,30 @@
+-Ansible, Puppet, and Chef bring ease of use, predictability, discipline, and the ability to work at scale to DevOps work.
+-Automation tooling partly works by wrapping shell functionality, operating system utilities, API functions and other control plane 
+ elements for simplicity, uniformity, feature enrichment, and compatibility in DevOps scenarios.
+-Every automation tool has one or more functions that execute basic commands and scripts on targets and return results.
+    in Ansible, these functions include command, shell, and raw.
+-Rare to look deep down into tool-maintained infra-as-code repos without finding some scripting
+
+Shells are ubiquitous, so shell scripting is historically the bedrock of automation.
+
+-Bash
+    -The Unix shell is known as Bash, and is the default on most Linux distributions and on macOS
+    -Using Bash, Python, or other conventional languages for automation usually means writing an imperative procedure
+        -an ordered sequence of commands aimed at achieving a goal.
+    -Developing a procedure
+        -Determine if it's running in a Debian or a CentOS environment, and use the correct package manager (apt or yum) and syntax.
+        -Determine if our target app is already installed in an appropriate version, and only try installing it if it's not present, 
+         stopping otherwise and making no further changes.
+        -Determine if it has made a copy of each config file before changing it, and use stream editors (awk, sed, and so on) to make 
+         changes neatly and precisely, rather than carelessly appending text to config files, and hoping the applications that consume 
+         these files won't break.
+    -As you develop and refine the scripts further,
+        -Discover, inventory, and compile information about target systems, and ensure the scripts do this by default.
+        -Encapsulate the complexity of safely installing applications, making config file backups and changes, and restarting services 
+         into reusable forms, such as subsidiary scripts containing parameters, function libraries, and other information.
+    -Ensure the scripts are efficient and reusable
+        -Standardize the ordering and presentation of parameters, flags, and errors.
+        -Create a code hierarchy that divides tasks logically and efficiently.
+        -Create high-level scripts for entire deployments and lower-level scripts for deployment phases.
+        -Separate deployment-specific data from the code, making the code as generic and reusable as possible.
+-The goal of almost any script is to achieve a desired state in a system

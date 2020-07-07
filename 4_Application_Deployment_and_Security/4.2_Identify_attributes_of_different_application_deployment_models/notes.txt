@@ -1,0 +1,35 @@
+On-Premises
+    -Traditional data centers housing individual machines.
+    -Provisioned for applications, rather than clouds, external or otherwise.
+    -Classically takes a lot of work
+    -Requests for resources need to go through the operations team, which can lead to delays
+    -Scaling an application typically means moving it to a larger server, which makes scaling up or down a major event
+
+Private Cloud
+    -Clouds provide self-service access to computing resources, such as virtual machines, containers, and even bare metal
+    -Users can log into a dashboard or use the command line to spin up new resources themselves.
+    -These platforms are referred to as Infrastructure-as-a-Service (IaaS)
+    -What distinguishes a private cloud from other types of clouds is that all resources within the cloud are under the 
+     control of your organization.
+Public Cloud
+    -Managed by a public cloud provider
+    -Share resources with other organizations: your virtual machine may run on the same host as a VM belonging to someone else.
+    -Public cloud providers may (at a higher price) be able to provide customers with dedicated infrastructure
+    -Most provide several geographically-separate cloud 'regions' in which workloads can be hosted.
+    -Enabling jurisdictional control over where data is stored
+    -You can scale up virtually indefinitely as long as the load requires it, then scale down when traffic is slow.
+    -Don’t have to worry about maintaining or operating the hardware
+    -May have to contend with situations in which other workloads take up more than their share of resources.
+    -No control over the overcommitting of resources by provider
+
+Hybrid Cloud
+    -You might have an application that runs on your private cloud, but “bursts” to public cloud if it runs out of resources
+    -Have an application that primarily runs on the public cloud, but uses resources in the private cloud for particular 
+     purposes when security or control are an issue
+    -What distinguishes hybrid cloud is the use of more than one cloud within a single application.
+
+Edge Cloud
+    -Edge cloud moves computing closer to where it’s needed
+    -The edge cloud processes the data or transaction then either sends a response back to the client
+    -It's important to note that at their heart, there is nothing "special" about edge clouds. They're just typical clouds. 
+     What makes them "edge" is where they are, and that they're connected to each other.

@@ -1,0 +1,17 @@
+Edge Cloud
+    -Edge cloud moves computing closer to where it’s needed
+    -The edge cloud processes the data or transaction then either sends a response back to the client
+    -It's important to note that at their heart, there is nothing "special" about edge clouds. They're just typical clouds. 
+     What makes them "edge" is where they are, and that they're connected to each other.
+    -Cisco's industrial networking products, such as routers, switches, and wireless access points, have integrated edge computing capabilities
+    
+    Examples
+        -Another area where you may see edge computing is in retail, where you have multiple stores. Each store might have its own 
+         internal cloud -- the edge cloud -- which feeds into the regional cloud, which in turn might feed into a central cloud. 
+         This architecture gives local offices the benefits of having their own cloud (such as consistent deployment of APIs to ensure 
+         each store can be managed, updated, and monitored efficiently).
+
+        -Edge cloud moves computing closer to where it’s needed, so instead of transactions making their way from the end user 
+         in, say, Cleveland, to the main cloud in, say, Oregon, there may be an intermediary cloud -- an edge cloud -- in Cleveland. 
+         The edge cloud processes the data or transaction then either sends a response back to the client, or does preliminary analysis 
+         of the data and sends the results on to a regional cloud that may be farther away.

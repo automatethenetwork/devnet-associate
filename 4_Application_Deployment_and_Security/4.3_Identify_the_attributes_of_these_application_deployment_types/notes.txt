@@ -1,0 +1,38 @@
+Bare metal
+    -Software can access the operating system and hardware directly
+    -Situations in which you need access to specialized hardware, 
+     or for High Performance Computing (HPC) applications in which every bit of speed counts.
+    -Disadvantage, however, is in isolating different workloads from each other. In a bare metal environment, 
+     every application on the machine is using the same kernel, operating system, storage, and so on.
+    -Isn’t very flexible in terms of resources; a machine with 64 GB or RAM isn’t going to get larger 
+     or smaller unless someone physically takes it apart to add or remove hardware.
+     
+Virtual machines
+    -Hypervisor is software that creates and manages VMs.
+    -Open-source (OpenStack, Linux KVM, XEN) and from commercial vendors such as Oracle (VirtualBox), 
+     VMware (Horizon, vSphere, Fusion), Microsoft (Hyper-V), and others.
+    -Workloads can be isolated from each other, separate VMs
+    -Applications running on the VM are bounded by the VM. Access to resources outside of the VM is via virtual networks.
+    -VMs can run different OS
+    -Total RAM dedicated to VMs can be higher than physically available (overcommiting)
+    -Run on top of a hypervisor, such as KVM, QEMU, or VMware
+    -VMs can host a wide range of software — even legacy software.
+
+Container-based infrastructure
+    -Software to create and manage or orchestrate containers is available from Docker, 
+     AWS (Elasticized Container Service), Microsoft (Azure Container Service), and others
+    -A VM contains an entire guest operating system, but a container shares the operating system of the host machine 
+     and uses container-specific binaries and libraries.
+    -Where VMs emulate an entire computer, a container typically represents just an application or a group of applications.
+    -Libraries and binaries you need to run the application are included, no need for additional installation steps
+    -Each application is in its own container, it's isolated from any conflicting libraries and binaries.
+    -Can take advantage of orchestration tools
+    -Sateless and startup quickly, save resources when shut down
+    -Foundation of cloud native computing, in which applications are generally stateless.
+
+Serverless computing
+    -Not technically true
+    -Running on a server that you don’t control, and don’t have to think about. Hence the name.
+    -Applications created on an as needed basis
+    -Elastic capacity
+    -Zero control over the host machine, so it may not be appropriate from a security perspective.
