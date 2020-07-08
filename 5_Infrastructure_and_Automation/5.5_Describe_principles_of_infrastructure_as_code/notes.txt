@@ -1,0 +1,8 @@
+Infrastructure as Code
+    -Systems provisioned/deployed as scripts
+    -One base level of production
+    -New changes need to be added to Code
+    -Avoids human error
+    -Synchronized dev environment
+    -Config management and drift prevention
+    -Quick deployment of changes

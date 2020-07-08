@@ -28,3 +28,60 @@ Shells are ubiquitous, so shell scripting is historically the bedrock of automat
         -Create high-level scripts for entire deployments and lower-level scripts for deployment phases.
         -Separate deployment-specific data from the code, making the code as generic and reusable as possible.
 -The goal of almost any script is to achieve a desired state in a system
+
+
+-Automation tools like Ansible, Puppet, or Chef offer powerful capabilities compared to ad-hoc automation 
+ strategies using BASH, Python, or other programming languages.
+-Automation tool modules enable best practices that make code safer and idempotency easier to achieve. 
+-Ansible functions can back up configuration files on target systems or retrieve copies and store them 
+ locally on a deployer machine before making changes, enabling recovery if a deployment breaks or is interrupted.
+-Automation tools typically "gather facts" from target devices as a default in the normal course of operations.
+    -Hardware configuration, BIOS settings, operating system, configuration of network and other peripheral cards 
+     and subsystems, installed applications, and other details.
+-Some tools, like Cisco ACI, can also gather configuration details from individual devices and higher-order virtualization frameworks.
+-Most automation tools can work in a local mode — basically running on a laptop — as well as a "client/server" or "distributed agent" mode, 
+ enabling the tool to manage thousands or tens of thousands of nodes.
+
+Procedure vs. Declarative
+
+-Ansible and Puppet, for example, are often described as employing declarative Domain-Specific Languages (DSLs), whereas Chef is said to be more inherently procedural.
+-Ansible is based on Python, Puppet and Chef are built on Ruby. All can make use of both declarative and procedural techniques as needed, 
+ and many real-world automation tasks require both approaches.
+
+-Provisioning 
+    refers to obtaining compute, storage, and network infrastructure (real or virtual), enabling communications, putting it into service, and making it ready 
+    for use by operators and developers (e.g., by installing an operating system, machine-level metrics, ssh keys, and the lowest level of operations tooling).
+
+-Configuration 
+    means installing base applications and services and performing the operations, tasks, and tests required to prepare a low-level platform to deploy 
+    applications or a higher-level platform.
+
+-Deployment 
+    involves building, arranging, integrating, and preparing multi-component applications (such as database clusters) or higher-level platforms 
+    (like Kubernetes clusters), often across multiple nodes.
+
+-Orchestration 
+    may refer to several things. When meant concretely, it usually refers to user-built or platform-inherent automation aimed at managing workload lifecycles 
+    and reacting dynamically to changing conditions (e.g., by autoscaling or self-healing), particularly in container environments. When meant abstractly, 
+    it may refer simply to processes or workflows that link automation tasks to deliver business benefits, like self-service.
+
+
+-Not stateless: An app that saves important information in files or in a database on the local file.
+-Stateless: An app that persists its state to a separate database or that provides service that requires no memory of state between invocations.
+
+-Ansible
+    -Ansible's control node runs on virtually any Linux machine running Python 2 or 3, including a laptop, a Linux VM residing on a laptop of any kind, 
+    or on a small virtual machine adjacent to cloud-resident resources under management. All system updates are performed on the control node.
+    -The control node connects to managed resources over SSH. Through this connection, Ansible can:
+        -Run shell commands on a remote server or transact with a remote router or other network entity via its REST interface.
+        -Inject Python scripts into targets and remove them after they run
+        -Install Python on target machines if required.
+    -Plugins enable Ansible to gather facts from and perform operations on infrastructure that can't run Python locally, such as cloud provider REST interfaces.
+    -Ansible is substantially managed from the Bash command line, with automation code developed and maintained using any standard text editor.
+
+-Installing
+    #sudo apt-add-repository- ppa:ansible/ansible
+    #sudo apt install ansible -y
+    -Configure remote access to devices
+    -Inventory file
+    
