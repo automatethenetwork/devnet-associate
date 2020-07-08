@@ -84,4 +84,19 @@ Procedure vs. Declarative
     #sudo apt install ansible -y
     -Configure remote access to devices
     -Inventory file
-    
+        [Group Name]
+        hostname
+        ip
+    -Modules included for different vendors/protocols
+    -Playbook files, ran against devices, written in YAML
+        #ansible-playbook playbook.yml # to run playbook
+    -Output for each task, OK, Changed, unreachable, failed, skipped, rescued, ignore
+    -Variables and facts
+        Declare variables and inject with {{}}
+        Facts are gathered when Ansible connects
+            Run tasks based on those facts
+    -when statement
+        using facts as well
+    -loops
+        {{items}}
+        with_items:
