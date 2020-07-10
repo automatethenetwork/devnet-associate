@@ -7,5 +7,17 @@ token in headers
 FMC manages Firepower Devices (ASAs with FP) and Firepower Threat Defense Devices (pure FP devices)
 
 
+ASA API
+
+-Separate package to download onto ASA
+-Enable API and http server is spun up and enabled
+-Doc browser w/ examples
+-Export as python, perl, javascript
+
+https://IP/api/interfaces/physical
+-username and password auth
+
+
+
 
 

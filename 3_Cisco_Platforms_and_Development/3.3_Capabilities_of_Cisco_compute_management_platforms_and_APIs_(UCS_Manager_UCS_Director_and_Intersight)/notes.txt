@@ -13,16 +13,17 @@ Sandbox: https://devnetsandbox.cisco.com/RM/Diagram/Index/a63216d2-e891-4856-9f2
 
 Sandbox: https://devnetsandbox.cisco.com/RM/Diagram/Index/3323b7b0-b70b-4b1e-a929-6bdbff3aac8a?diagramType=Topology
 
-- RPC-Based
-- XML
-- UCSMSDK - Python SDK
-- PowerTool - Powershell SDK
+- RPC-Based XML API
+    - UCSMSDK - Python SDK
+    - PowerTool - Powershell SDK
 
 # UCS Director
 
 Sandbox: https://devnetsandbox.cisco.com/RM/Diagram/Index/3323b7b0-b70b-4b1e-a929-6bdbff3aac8a?diagramType=Topology
 
 - Running the Data Center
-- Regardless of the platform
-- REST API
-- XML
+- Regardless of the platform, platform agnostic
+- REST API w/ XML
+    Behaves a bit like SOAP API
+
+

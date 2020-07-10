@@ -100,3 +100,7 @@ Procedure vs. Declarative
     -loops
         {{items}}
         with_items:
+    -environment variables, .ansible_env
+    -host_vars, group_vars
+-Ansible documentation
+    -Modules and required variables
