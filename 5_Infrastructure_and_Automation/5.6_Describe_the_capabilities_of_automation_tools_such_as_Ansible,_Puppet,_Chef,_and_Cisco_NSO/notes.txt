@@ -104,3 +104,12 @@ Procedure vs. Declarative
     -host_vars, group_vars
 -Ansible documentation
     -Modules and required variables
+
+
+Cisco NSO, Network Services Orchestrator
+
+- "Build your own" network controller
+- Works with legacyIOS and 3rd party devices
+- REST API (XML or JSON) + Python/Java SDK
+- Various vnd.yang headers
+- 
