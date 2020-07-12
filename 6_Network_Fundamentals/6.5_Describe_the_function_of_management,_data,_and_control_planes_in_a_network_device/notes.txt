@@ -1,0 +1,14 @@
+
+Control
+    Learns how to forward
+        -Routing protocols
+        -Mac address table
+        -STP
+        -Can be separate from device
+Data 
+    -Forward Data
+Management
+    Interact with devices
+        -SNMP
+        -NETCONF
+        -SSH
