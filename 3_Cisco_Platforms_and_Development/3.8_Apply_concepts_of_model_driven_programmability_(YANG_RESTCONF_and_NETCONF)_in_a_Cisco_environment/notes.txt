@@ -61,3 +61,7 @@ RESTCONF:
 - Content-Type: application/yang-data+json
 
 - "restconf; http server; http auth local; http secure-server;" starting restconf
+- The basic format of a RESTCONF URL is:
+
+https://<hostURL>/restconf<resource><container><leaf><options>
+where any portion after restconf could be omitted

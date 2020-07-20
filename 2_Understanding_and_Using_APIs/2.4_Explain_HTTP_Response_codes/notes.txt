@@ -2,6 +2,7 @@ Response Codes
 
 - 1XX Informational Responses
 - 2XX Successful Responses
+	- 200 - OK
 - 3XX Redirects
 - 4XX Client Erroes
     - 400 - Bad request
@@ -13,3 +14,16 @@ Response Codes
     - 405 - Method not allowed
         Wrong verb in request
 -5XX Server Errors
+	- 500 - Internal server error
+	- 501 - Not implemented
+	- 502 - Bad gateway
+
+
+200	- OK - All looks good
+201	- Created	- New resource created
+400	- Bad Request	- Request was invalid
+401	- Unauthorized - Authentication missing or incorrect
+403	- Forbidden - Request was understood but not allowed
+404	- Not Found - Resource not found
+500	- Internal Server Error - Something wrong with the server
+503 - Service Unavailable - Server is unable to complete request

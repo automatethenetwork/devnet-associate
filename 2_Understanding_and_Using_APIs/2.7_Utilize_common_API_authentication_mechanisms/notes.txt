@@ -16,7 +16,6 @@ Verify Signature: Your custom secret
 - Balancing
 
 
-
 Most APIs require some sort of authentication
 
 Authentication vs authorization
@@ -61,3 +60,8 @@ Token Authentication
 - Supports statelessness
     Speed - Don't need to hit storage/db for every request
     Balancing - can distribute requests across servers
+
+
+
+DNA Center 
+Basic auth w/ Token returned and resent with requests
