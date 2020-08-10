@@ -30,3 +30,45 @@ SOAP APIs
 - Headers = basic auth
 - Methods in tags
 - What methods to use? Documentation
+
+
+Webex Teams
+    Compare to Microsoft Teams or Slack
+    Capabilities
+        always connected
+        unites messaging, file sharing, video, whiteboard, calling to one platform
+        goal is to streamline teamwork and more productivity
+        Secure virtual workspaces
+    Webex Teams APIs
+        Create conversation bots
+        Embed video call in mobile and wep apps
+        Start team spaces instantly
+Webex devices
+    Video Conferencing Equipment
+        Webex Board
+        Webex Room Devices
+        Webex Desk Devices
+        More…
+        Works with Webex Teams
+    API
+        embedded APIs (xAPI)
+Cisco Unified Communication Manager (Cisco unified CM)
+    Capabilities
+        Consolidate communications infrastructure (IP Telephony, HD video conferencing, unified messaging, IM and Presence)
+        Extends to remote workers and mobile devices
+        Scalable
+        Many 3rd Party integrations and solutions
+        Security
+    API
+    AXL (Administrative XML Web Service) interfaces (XML/SOAP)
+        handles inserting, retrieving, updating and removing data from UC config database.
+        combined with WSDL to create, read, update and delete UnifiedCM objects
+    UDS (User Data Services) interfaces (REST)
+        Authenticated access to user resources and objects in the Unified CM config database
+Finesse (Customer Service Platform)
+    Capabilities
+        Multiple applications needed are presented through a single interface in the form of gadgets.
+        Easy-to-use REST API for creating apps and more gadgets.
+        Web application (no need for client-side installation like plug-ins or JREs)
+    APIs
+        Finesse REST APIs

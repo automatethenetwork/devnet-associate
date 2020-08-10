@@ -27,3 +27,26 @@ Sandbox: https://devnetsandbox.cisco.com/RM/Diagram/Index/3323b7b0-b70b-4b1e-a92
     Behaves a bit like SOAP API
 
 
+
+What are some examples of the management platforms available?
+
+    We will highlight and not go too much indepth to every platform.
+
+    UCS Manager
+
+    + separate data and control plane
+
+    it manages cisco hardware in the way that vm manager manages vms
+    UCS Director
+
+    + UCS Director -- the software that creates a private cloud. + contains compute, network, and storage + a middleware for automation, multi-tenancy, orchestration, monitoring, and self-service workload provisioning.
+
+    Intersight
+
+    + Cloud based management (SaaS) solution to help with scaling and complexity of today's data center
+
+Let's talk about the APIs briefly…do they have them?
+
+    Cisco UCS Manager XML API
+    Cisco UCS Director REST API
+    Cisco Intersight RESTful API

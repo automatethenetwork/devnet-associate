@@ -17,7 +17,100 @@ ASA API
 https://IP/api/interfaces/physical
 -username and password auth
 
+Firepower
 
++ Capabilities
+
++ Granular visibility into network
+
+    Real-time threat management
+    Security automation
+    Threat Intelligence Director
+    Cisco Firepower Management Center (FMC)
+
+    + firewalls
+
+        application control
+        intrusion prevention
+        URL filtering
+        advanced malware protection
+        The REST APIs allow programming of the Firepower devices to allow one to automatically provision devices, deploy policies and controls, and monitor device health.
+
+Umbrella
+
++ Capabilities
+
+    + Cisco Umbrella is a cloud-native platform
+
+        Umbrella unifies firewall, secure web gateway, DNS-layer security, cloud access security broker (CASB), and threat intelligence solutions into a single platform.
+        Extend protection to roaming users and branch offices.
+        Leveraging insights from Cisco Talos, one of the world’s large
+        cloud-delivered secure web gateway logs and inspects all web traffic
+        cloud-delivered firewall helps to log and block traffic using IP, port, and protocol rules for compliance
+    The following APIs are available:
+
+    + Management API—Manage organizations, networks, roaming clients and more.
+
+Reporting API—Enables organizations to run several reports.
+Console Reporting API—Enables MSPs, MSSPs, and Multi-Org Console administrators to view deployment and security summaries.
+Network Device Management—Enables organizations to register a hardware device with Umbrella, set policies for that device, etc.
+Legacy Network Devices API—Enables organizations to integrate legacy hardware network devices with Umbrella.
+Enforcement API—Enables organizations to manage security-related block lists.
+Investigate API—An API-based version of the Investigate dashboard.
+Dynamic IP Update API—Enables you to keep your Umbrella Network IP addresses up to date when using a dynamic public IP address.
+
+AMP
+
++ Capabilities
+
+    + comprehensive protection for your organization across the attack life-cycle: before, during, and after an attack.
+
+        prevents breaches but also gives you the visibility, context, and control to rapidly detect, contain, and remediate threats if they evade front-line defenses, all cost-effectively and without affecting operational efficiency.
+        before attack— Cisco Talos
+        during attack—ThreatGrid
+        after attack—continuously monitors and analyzes all file activity and traffic, regardless of disposition, searching for any indications of malicious behavior (Retrospective Detection)
+        APIs
+
++ Cisco AMP for Endpoints API
+
+ISE
+
+Capabilities
+    dashboard view into every user, device and threat.
+    Visibility into all users and devices controlling access across wired, wireless, and VPN connections to the corporate network.
+    Creates and enforces security and access policies for endpoint devices connected to managed routers and switches.
+    context-aware identity management in the following areas:
+        users are accessing the network on an authorized, policy-compliant device.
+        user identity, location, and access history, which can be used for compliance and reporting.
+        assigns services based on the assigned user role, group, and associated policy (job role, location, device type, and so on).
+        authenticated users with access to specific segments of the network, or specific applications and services, or both, based on authentication results.
+    API
+        ISE External RESTful Services(ERS) API
+        Monitoring REST API--locate, monitor, and accumulate important real-time, session-based information stored in individual endpoints in a network.
+
+Threat Grid
+
++ Capabilities
+
+    + Malware protection
+
+    + Threat intelligence
+
+        sandboxing
+    rapidly analyzes files and suspicious behavior across your environment
+
+    global and historical view of the malware, what it’s doing, and how large a threat it poses to your organization
+
+    Prioritize threats
+
+API
+
++ The Threat Grid API offers broad functionality, primarily in the areas of
+
+    + user and organization account management
+        sample management
+        sample analysis data collection
+        threat intelligence harvesting
 
 
 
